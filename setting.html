@@ -1,154 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="./css/setting.css">
 </head>
+
 <body>
-    <!--表單命名處 -->
- <div class="container"> 
-    <div class="form-title">
-        <input type="text" value="未命名的表單" class="form-title-input"></input>
-        <div class="input-list">
-            <!-- 粗體字 -->
-            <i class="fa-sharp fa-solid fa-bold"></i>
-            <!-- 斜體字 -->
-            <i class="fa-solid fa-italic"></i>
-            <!-- 底線 -->
-            <i class="fa-sharp fa-solid fa-underline"></i>
-            <!-- 連結 -->
-            <i class="fa-solid fa-link-simple"></i>
-            <!-- 數字清單 -->
-            <i class="fa-sharp fa-solid fa-list-ol"></i>
-            <!-- 清單 -->
-            <i class="fa-solid fa-list-ul"></i>
-            <!-- 移除格式 -->
-            <i class="fa-solid fa-text-slash"></i>
-        </div>
-        <input type="text" value="表單說明" class="form-explain-input-2"></input>
-        <div class="input-list">
-            <!-- 粗體字 -->
-            <i class="fa-sharp fa-solid fa-bold"></i>
-            <!-- 斜體字 -->
-            <i class="fa-solid fa-italic"></i>
-            <!-- 底線 -->
-            <i class="fa-sharp fa-solid fa-underline"></i>
-            <!-- 連結 -->
-            <i class="fa-solid fa-link-simple"></i>
-            <!-- 數字清單 -->
-            <i class="fa-sharp fa-solid fa-list-ol"></i>
-            <!-- 清單 -->
-            <i class="fa-solid fa-list-ul"></i>
-            <!-- 移除格式 -->
-            <i class="fa-solid fa-text-slash"></i>
-        </div>
-    </div>
-    <!-- 問題設置 -->
-    <div class="question">
-        <!-- 第一行 -->
-        <div class="question-1">
-            <div class="text-box">
-                <input type="text" value="未命名的問題" class="form-title-input"></input>
-                <div class="input-list">
-                    <!-- 粗體字 -->
-                    <i class="fa-sharp fa-solid fa-bold"></i>
-                    <!-- 斜體字 -->
-                    <i class="fa-solid fa-italic"></i>
-                    <!-- 底線 -->
-                    <i class="fa-sharp fa-solid fa-underline"></i>
-                    <!-- 連結 -->
-                    <i class="fa-solid fa-link-simple"></i>
-                    <!-- 移除格式 -->
-                    <i class="fa-solid fa-text-slash"></i>
+    <div class="body">
+        <div id="setting" class="box">
+            <h1 class="set"><small>設定</small></h1>
+            <div class="box-set">
+                <div id="text" class="setting-box">
+                    <div class="font-box">
+                        <h4>設為測驗</h4>
+
+                        <small>你可以指派各題目的分數值、設定答案，以及自動提供意見回饋</small>
+                    </div>
+
+                </div>
+                <div id="reply" class="setting-box">
+                    <div class="font-box">
+                        <h4>回覆</h4>
+                        <small>管理收集與保護回覆的方式</small>
+                    </div>
+                </div>
+                <div id="ppt" class="setting-box">
+                    <h4>簡報 </h4>
+                    <small>管理表單和回覆的顯示方式</small>
                 </div>
             </div>
-            <i class="fa-regular fa-images"></i>
-            <!-- 下拉選單 -->
-            <div class="check-box"><i class="fa-regular fa-circle-dot"></i><span>選擇題</span><i class="fa-solid fa-triangle fa-rotate-180"></i>
-                <div class="answer-style">
-                    <ul>
-                        <li>
-                            <div class="line-box">
-                             <div class="line"></div>
-                             <div class="line line-two"></div>
-                            </div> 
-                            簡答
-                        </li>
-                        <li><i class="fa-solid fa-bars-sort"></i>詳答</li>
-                    </ul>
-                    <ul>
-                        <li><i class="fa-regular fa-circle-dot"></i>選擇題</li>
-                        <li><i class="fa-sharp fa-regular fa-square-check"></i>核取方塊</li>
-                        <li><i class="fa-sharp fa-solid fa-chevron-down"></i>下拉式選單</li>
-                    </ul>
-                    <ul>
-                        <li><i class="fa-regular fa-cloud-arrow-up"></i>檔案上傳</li>
-                    </ul>
-                    <ul>
-                        <li><img src="./image/scale3.jpg">線性刻度</li>
-                        <li><img src="./image/dot2.jpg">單選方格</li>
-                        <li><img src="./image/square.jpg">核取方塊格</li>
-                    </ul>
-                    <ul>
-                        <li>&nbsp;<i class="fa-regular fa-calendar-day"></i>日期</li>
-                        <li>&nbsp;<i class="fa-regular fa-clock"></i>時間</li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
-        <!-- 第二行 線性刻度 -->
-        <div class="question-2">
-            <!-- 範圍設定 -->
-            <div class="set-number">
-                <ul class="number0-1">
-                    <li class="show-number">0<i class="fa-solid fa-triangle fa-rotate-180"></i></li>
-                    <li>1</li>
-                </ul>
-                &nbsp;到&nbsp;
-                <ul class="number2-10">
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li class="show-number">5<i class="fa-solid fa-triangle fa-rotate-180"></i></li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                </ul>
-            </div>
-            <!-- 最大值與最小值意義設定 -->
-            <div class="num-mean">
-                <div class="min"><span class="min-num">1</span><input type="text" class="num-mean-input" value="標籤(選填)" ></div>
-                <div class="max"><span class="max-num">5</span><input type="text" class="num-mean-input" value="標籤(選填)"></div>
-            </div>
-        </div>
-        <!-- 第三行 -->
-        <div class="question-3">
-             <div class="two">
-                <i class="fa-regular fa-copy"></i>
-                <i class="fa-regular fa-trash-can"></i>
-            </div>
-            <!-- 閉填選項開關 -->
-            <div class="two-after">
-                <label>
-                  <span class="text">必填</span>
-                  <input type="checkbox" name="" id="" class="checkbox">
-                  <span class="btn-box">
-                    <span class="btn"></span>
-                  </span>
-                </label>
 
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-          
+
+        </div>
+        <div id="preview" class="box">
+            <h1>預設值</h1>
+            <div id="preview-set" class="preview-box"></div>
+            <div id="question-set" class="preview-box"></div>
         </div>
     </div>
-</div>  
-<!-- 題目建置處 -->
-
 </body>
+
 </html>
