@@ -424,6 +424,106 @@ body{
                 }
             }
         }
+        .questype-8{
+            width:100%;
+            display: none;  
+            .left_right{
+                width:100%;
+                display:none;
+             .right, .left{
+                width:50%;
+                padding: 30px 0;
+                border-bottom: 1px solid $grey;
+                display:none;
+                .choose{
+                    width:100%;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        padding-top: 12px;
+                    }
+                    .choose_line{
+                        width:80%;
+                        border:none;
+                        height:40px;
+                        font-size:16px;
+                        font-weight: 500;
+                        &:hover{
+                            border-bottom:1px solid $grey ;
+                        }
+                        &:focus{
+                            border:0px solid white;
+                            border-bottom:3px solid  rgb(103,58,183);
+                            outline: none;
+                        }    
+                    }
+                    .choose_line2{
+                            width:70px; 
+                            color:$font-grey;
+                    }
+                }
+             }
+             .right{
+                #checkbox, #checkbox2{
+                    width:24px;
+                    height:24px;
+                    margin-right: 5px;
+                    pointer-events: none;
+                 }
+                
+             }            
+            }
+        }
+        .questype-9{
+            width:100%;
+            display: none;  
+            .left_right{
+                width:100%;
+                display:none;
+             .right, .left{
+                width:50%;
+                padding: 30px 0;
+                border-bottom: 1px solid $grey;
+                display:none;
+                .choose{
+                    width:100%;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        padding-top: 12px;
+                    }
+                    .choose_line{
+                        width:80%;
+                        border:none;
+                        height:40px;
+                        font-size:16px;
+                        font-weight: 500;
+                        &:hover{
+                            border-bottom:1px solid $grey ;
+                        }
+                        &:focus{
+                            border:0px solid white;
+                            border-bottom:3px solid  rgb(103,58,183);
+                            outline: none;
+                        }    
+                    }
+                    .choose_line2{
+                            width:70px; 
+                            color:$font-grey;
+                    }
+                }
+             }
+             .right{
+                #checkbox, #checkbox2{
+                    width:24px;
+                    height:24px;
+                    margin-right: 5px;
+                    pointer-events: none;
+                 }
+                
+             }            
+            }
+        }
         .question-3{
             width:100%;
             display: flex;
