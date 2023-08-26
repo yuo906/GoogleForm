@@ -70,38 +70,40 @@
                 </div>
                 <i class="fa-regular fa-images"></i>
                 <!-- 下拉選單 -->
-                <div class="check-box"><i class="fa-regular fa-circle-dot"></i><span>選擇題</span><i class="fa-solid fa-triangle fa-rotate-180"></i>
+                <div class="check">
+                    <div class="check-box">
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <span>選擇題</span>
+                        <i class="fa-solid fa-triangle fa-rotate-180"></i>
+                    </div> 
                     <div class="answer-style">
-                        <ul>
-                            <li>
-                                <div class="line-box">
-                                 <div class="line"></div>
-                                 <div class="line line-two"></div>
-                                </div> 
-                                簡答
-                            </li>
-                            <li><i class="fa-solid fa-bars-sort"></i>詳答</li>
-                        </ul>
-                        <ul>
-                            <li><i class="fa-regular fa-circle-dot"></i>選擇題</li>
-                            <li><i class="fa-sharp fa-regular fa-square-check"></i>核取方塊</li>
-                            <li><i class="fa-sharp fa-solid fa-chevron-down"></i>下拉式選單</li>
-                        </ul>
-                        <ul>
-                            <li><i class="fa-regular fa-cloud-arrow-up"></i>檔案上傳</li>
-                        </ul>
-                        <ul>
-                            <li><img src="./image/scale3.jpg">線性刻度</li>
-                            <li><img src="./image/dot2.jpg">單選方格</li>
-                            <li><img src="./image/square.jpg">核取方塊格</li>
-                        </ul>
-                        <ul>
-                            <li>&nbsp;<i class="fa-regular fa-calendar-day"></i>日期</li>
-                            <li>&nbsp;<i class="fa-regular fa-clock"></i>時間</li>
-                        </ul>
-                    </div>
-                </div> 
-            </div>
+                            <ul>
+                                <li><i class="fa-solid fa-pause fa-rotate-90"></i>簡答</li>
+                                <li><i class="fa-solid fa-bars-sort"></i>詳答</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa-regular fa-circle-dot"></i>選擇題</li>
+                                <li><i class="fa-sharp fa-regular fa-square-check"></i>核取方塊</li>
+                                <li><i class="fa-sharp fa-solid fa-chevron-down"></i>下拉式選單</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa-regular fa-cloud-arrow-up"></i>檔案上傳</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa-solid fa-ruler"></i>線性刻度</li>
+                                <li><i class="fa-duotone fa-list"></i>單選方格</li>
+                                <li><i class="fa-solid fa-table-cells"></i>核取方塊格</li>
+                            </ul>
+                            <ul>
+                                <li>&nbsp;<i class="fa-regular fa-calendar-day"></i>日期</li>
+                                <li>&nbsp;<i class="fa-regular fa-clock"></i>時間</li>
+                            </ul>
+                        </div>
+                    
+                
+                
+                    </div> 
+                </div>
             <!-- 第二行 線性刻度 -->
             <div class="question-2">
                 <!-- 範圍設定 -->
@@ -126,6 +128,7 @@
                             <li>8</li>
                             <li>9</li>
                             <li>10</li>
+                        </div>   
                     </ul>
                 </div>
                 <!-- 最大值與最小值意義設定 -->
@@ -157,8 +160,51 @@
         </div>
     </div>  
     <script>
+// --------------------題目形式選擇----------------------------------------------
+    let check_box = document.querySelector('.check-box');
+    let check_box_i = document.querySelector('.check-box i');
+    let check_box_span = document.querySelector('.check-box span');
+    
+    let answer_style= document.querySelector('.answer-style');
+    let answer_ul = document.querySelectorAll('.answer-style ul');
+    let answer = document.querySelectorAll('.answer-style ul li');
+    //    -------點選預設項目時------------
+    check_box.addEventListener('click',()=>{
+        answer_style.style.display='block';
+            for(i = 0; i < 5; i++){
+            answer_ul[i].style.display='block';
+            }
+            console.log(456); 
+    })
+    // ----------選好項目時-------------------------------
+    answer.forEach(item =>{item.addEventListener('click',()=>{
+        ans = item.classList.value;
+        console.log(ans);
+        // console.log(item);
+        check_box_i.classList=[];
+        check_box_span.textContent=`${item.textContent}`;
+        i_class= item.querySelector('i');
+        i_class_name = i_class.classList.value;
+        check_box_i.classList=[`${ i_class_name}`];
+
+        // check_box_i.classList.add('ans');
+        check_box.style.display='flex';
+        answer_style.style.display='none';
+        for(i = 0; i < 5; i++){
+        answer_ul[i].style.display='none';
+        };
+        console.log(123);
+     })
+        
+    });
+
+
+
+
+
+
 // --------------------線性刻度--------------------------------------
-        let li =document.querySelectorAll('.number0-1 li');
+       { let li =document.querySelectorAll('.number0-1 li');
         let choose0_1 =document.querySelector('.choose0-1');
         let span =document.querySelector('.show-number span');
         // ------------------------------------------------------------
@@ -208,7 +254,7 @@
             choose2_10.classList.remove('show-number');    
             span2.textContent=`${value}`;
         }
-
+    }
     </script>
   
       

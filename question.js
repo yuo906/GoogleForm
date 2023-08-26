@@ -12,3 +12,24 @@
         //     console.log(li);
         //     })  
         // });
+
+
+        
+        // .line-box{
+        //     width:22px;
+        //     height:16px;
+        //     padding-top: 3px;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     align-content: space-around;
+        //     .line{
+        //     width: 100%;
+        //     height: 2.7px;
+        //     background-color:$font-grey;
+        //     border-radius: 2px; 
+        //     } 
+        //     .line-two{
+        //         width: 70%;     
+        //         }
+
+        // }
