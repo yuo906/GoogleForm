@@ -524,6 +524,34 @@ body{
              }            
             }
         }
+        .questype-10{
+            padding: 20px 0 35px ;
+            display:none;
+            border-bottom: 1px solid $grey;
+            .calender{
+                display:flex;
+                justify-content: space-between;
+                width:35%;
+                font-size: 16px;
+                font-weight:600;
+                color:$grey;
+                border-bottom:1px dotted $grey;
+            }
+        }
+        .questype-11{
+            padding: 20px 0 35px ;
+            display:none;
+            border-bottom: 1px solid $grey;
+            .clock{
+                display:flex;
+                justify-content: space-between;
+                width:35%;
+                font-size: 16px;
+                font-weight:600;
+                color:$grey;
+                border-bottom:1px dotted $grey;
+            }
+        }
         .question-3{
             width:100%;
             display: flex;

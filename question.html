@@ -242,11 +242,11 @@
             </div>
             <!-- 第二行 第十種  日期-->
             <div class="questype-10">
-
+                <div class="calender">年/月/日<i class="fa-regular fa-calendar-day"></i></div>
             </div>
             <!-- 第二行 第十一種  時間-->
             <div class="questype-11">
-
+                <div class="clock">時間<i class="fa-regular fa-clock"></i></div>
             </div>
             <!-- 第三行 -->
             <div class="question-3">
@@ -272,7 +272,8 @@
     </div>  
     <script>
 // --------------------題目形式選擇----------------------------------------------
-   {let check_box = document.querySelector('.check-box');
+   {
+    let check_box = document.querySelector('.check-box');
     let check_box_i = document.querySelector('.check-box i');
     let check_box_span = document.querySelector('.check-box span');
     
@@ -319,7 +320,7 @@
         console.log(123);
         // 改成選到的類別的題目方塊-------------------------------
         // 將題目方塊都移除
-        for(clear_num = 0; clear_num<7; clear_num++){
+        for(clear_num = 0; clear_num < 11; clear_num++){
             document.querySelectorAll('[class^="questype-"]')[clear_num].style.display='none';
 
         }

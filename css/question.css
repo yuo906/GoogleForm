@@ -498,6 +498,34 @@ body {
   margin-right: 5px;
   pointer-events: none;
 }
+.container .question .questype-10 {
+  padding: 20px 0 35px;
+  display: none;
+  border-bottom: 1px solid rgb(178, 176, 176);
+}
+.container .question .questype-10 .calender {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(178, 176, 176);
+  border-bottom: 1px dotted rgb(178, 176, 176);
+}
+.container .question .questype-11 {
+  padding: 20px 0 35px;
+  display: none;
+  border-bottom: 1px solid rgb(178, 176, 176);
+}
+.container .question .questype-11 .clock {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(178, 176, 176);
+  border-bottom: 1px dotted rgb(178, 176, 176);
+}
 .container .question .question-3 {
   width: 100%;
   display: flex;
