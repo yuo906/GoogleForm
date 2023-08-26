@@ -35,14 +35,18 @@ body {
   border-bottom: 3px solid rgb(103, 58, 183);
   outline: none;
 }
+.container .form-title .form-title-input:focus + .input-list {
+  display: block;
+}
 .container .form-title .input-list {
+  display: none;
   width: 720px;
   height: 30px;
   margin: 8px 25px 8px;
 }
 .container .form-title .input-list i {
   margin: 10px;
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
 }
 .container .form-title .input-list i:hover {
   color: black;
@@ -54,12 +58,16 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin: 8px 25px 8px;
+  color: rgb(108, 105, 105);
   border-bottom: 1px solid rgb(178, 176, 176);
 }
 .container .form-title .form-explain-input-2:focus {
   border: 0px solid white;
   border-bottom: 3px solid rgb(103, 58, 183);
   outline: none;
+}
+.container .form-title .form-explain-input-2:focus ~ .input-list {
+  display: block;
 }
 .container .question {
   width: 100%;
@@ -88,13 +96,17 @@ body {
   border-radius: 10px 10px 0 0;
   outline: none;
 }
+.container .question .question-1 .text-box .form-title-input:focus ~ .input-list {
+  display: block;
+}
 .container .question .question-1 .text-box .input-list {
+  display: none;
   width: 447px;
   height: 30px;
   margin: auto;
 }
 .container .question .question-1 .text-box .input-list i {
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
   margin: 10px;
 }
 .container .question .question-1 .text-box .input-list i:hover {
@@ -113,7 +125,7 @@ body {
   width: 209px;
   height: 49px;
   border-radius: 10px;
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
   border: 1px solid rgb(178, 176, 176);
   font-weight: 600;
 }
@@ -153,7 +165,7 @@ body {
 }
 .container .question .question-1 .check .answer-style ul li i {
   font-size: 24px;
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
 }
 .container .question .question-1 .check .answer-style ul li img {
   width: 29px;
@@ -189,6 +201,50 @@ body {
   color: rgb(178, 176, 176);
   border-bottom: 1px dotted rgb(178, 176, 176);
 }
+.container .question .questype-3 {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid rgb(178, 176, 176);
+}
+.container .question .questype-3 .choose {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .question .questype-3 .choose #checkbox, .container .question .questype-3 .choose #checkbox2 {
+  display: none;
+}
+.container .question .questype-3 .choose .checkbox {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid rgb(178, 176, 176);
+  margin-right: 5px;
+}
+.container .question .questype-3 .choose .choose_line {
+  width: 80%;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.container .question .questype-3 .choose .choose_line:hover {
+  border-bottom: 1px solid rgb(178, 176, 176);
+}
+.container .question .questype-3 .choose .choose_line:focus {
+  border: 0px solid white;
+  border-bottom: 3px solid rgb(103, 58, 183);
+  outline: none;
+}
+.container .question .questype-3 .choose .choose_line2 {
+  width: 70px;
+  color: rgb(108, 105, 105);
+}
+.container .question .questype-3 .choose a {
+  color: rgb(39, 123, 233);
+  text-decoration: none;
+}
 .container .question .questype-7 {
   width: 100%;
   border-bottom: 1px solid rgb(178, 176, 176);
@@ -213,7 +269,7 @@ body {
   line-height: 50px;
   text-align: center;
   display: none;
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
   padding: 0 5px 0 10px;
 }
 .container .question .questype-7 .set-number ul li i {
@@ -263,7 +319,7 @@ body {
   justify-content: end;
   font-size: 18px;
   font-weight: 600px;
-  color: rgb(79, 77, 77);
+  color: rgb(108, 105, 105);
   padding: 24px 10px 0 0;
 }
 .container .question .question-3 .two {

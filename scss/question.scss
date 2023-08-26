@@ -1,7 +1,7 @@
 $grey:rgb(178, 176, 176);
-$font-grey:rgb(79, 77, 77);
+$font-grey:rgb(108, 105, 105);
 $blue:rgb(237,244,253);
-
+$md-blue:rgb(39,123,233);
 
 
 
@@ -40,8 +40,12 @@ body{
                     border-bottom:3px solid  rgb(103,58,183);
                     outline: none;
                 }
+                &:focus +  .input-list{
+                    display: block;
+                }
             }
         .input-list{
+            display:none;
             width:720px;
             height:30px;
             margin:8px 25px 8px;
@@ -58,12 +62,15 @@ body{
             font-size:18px;
             font-weight: 600;
             margin:8px 25px 8px;
+            color:$font-grey;
             border-bottom:1px solid $grey ;
             &:focus{
                 border:0px solid white;
                 border-bottom:3px solid  rgb(103,58,183);
-                outline: none;
-                
+                outline: none; 
+            }
+            &:focus ~  .input-list{
+                display: block;
             }
         }
     }
@@ -87,15 +94,19 @@ body{
                 height:56px;
                 font-size:16px;
                 font-weight: 600;
-                &:focus{
-                    border:0px solid white;
-                    border-bottom:3px solid  rgb(103,58,183);
-                    background-color: rgb(248,249,250);
-                    border-radius: 10px 10px 0 0;
-                    outline: none;
-                }
+                    &:focus{
+                        border:0px solid white;
+                        border-bottom:3px solid  rgb(103,58,183);
+                        background-color: rgb(248,249,250);
+                        border-radius: 10px 10px 0 0;
+                        outline: none;
+                    }
+                    &:focus ~.input-list {
+                        display: block;
+                    }
                 }
                 .input-list{
+                    display:none;
                     width:447px;
                     height:30px;
                     margin:auto;
@@ -199,6 +210,53 @@ body{
             border-bottom:1px dotted $grey;
             }
         }   
+        .questype-3{
+            width:100%;
+            padding: 30px 0;
+            border-bottom: 1px solid $grey;
+            .choose{
+                width:100%;
+                display: flex;
+                align-items: center;
+                #checkbox, #checkbox2{
+                    display: none;
+                }
+                .checkbox{
+                    width:24px;
+                    height:24px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border:2px solid $grey;
+                    margin-right: 5px;
+                
+                }
+                .choose_line{
+                    width:80%;
+                    border:none;
+                    height:40px;
+                    font-size:16px;
+                    font-weight: 500;
+                    &:hover{
+                        border-bottom:1px solid $grey ;
+                    }
+                    &:focus{
+                        border:0px solid white;
+                        border-bottom:3px solid  rgb(103,58,183);
+                        outline: none;
+                    }
+                    
+                }
+                .choose_line2{
+                        width:70px; 
+                        color:$font-grey;
+                    
+                }
+                a{
+                    color:$md-blue;
+                    text-decoration: none;
+                }
+            }
+        }
         .questype-7{
            width:100%;
            border-bottom: 1px solid $grey;
