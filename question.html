@@ -54,7 +54,7 @@
             <!-- 第一行 -->
             <div class="question-1">
                 <div class="text-box">
-                    <input type="text" value="未命名的問題" class="form-title-input"></input>
+                    <input type="text" value="問題" class="form-title-input"></input>
                     <div class="input-list">
                         <!-- 粗體字 -->
                         <i class="fa-sharp fa-solid fa-bold"></i>
@@ -104,6 +104,24 @@
                 
                     </div> 
                 </div>
+            <!-- 第二行 第一種 簡答 -->
+            <div class="questype-1">
+                <div class="short">簡答文字</div>
+            </div>
+            <!-- 第二行 第二種 詳答 -->
+            <div class="questype-2">
+                <div class="long">詳答文字</div>
+            </div>
+            <!-- 第二行 第三種 選擇題 -->
+            <div class="questype-3">
+                <div class="choose"></div>
+            </div>
+            <!-- 第二行 第四種 核取方塊 -->
+            <div class="questype-4"></div>
+            <!-- 第二行 第五種 下拉式選單 -->
+            <div class="questype-5"></div>
+            <!-- 第二行 第六種  檔案上傳-->
+            <div class="questype-6"></div>
             <!-- 第二行 第七種 線性刻度 -->
             <div class="questype-7">
                 <!-- 範圍設定 -->
@@ -137,6 +155,14 @@
                     <div class="max"><span class="max-num">5</span><input type="text" class="num-mean-input" value="標籤(選填)"></div>
                 </div>
             </div>
+            <!-- 第二行 第八種  單選方格-->
+            <div class="questype-8"></div>
+            <!-- 第二行 第九種  核取方塊格-->
+            <div class="questype-9"></div>
+            <!-- 第二行 第十種  日期-->
+            <div class="questype-10"></div>
+            <!-- 第二行 第十一種  時間-->
+            <div class="questype-11"></div>
             <!-- 第三行 -->
             <div class="question-3">
                  <div class="two">
@@ -207,13 +233,14 @@
         };
         console.log(123);
         // 改成選到的類別的題目方塊
-        document.querySelector('[class^="questype-"]').style.display='none';
-        // document.querySelectorAll('[class^="questype-"]').style.display='none';
+        // document.querySelector('[class^="questype-"]').style.display='none';
+        for(clear_num = 0; clear_num<7; clear_num++){
+        document.querySelectorAll('[class^="questype-"]')[clear_num].style.display='none';}
         let block_num_before = arr_i_letter.indexOf(i_class_name);
         let block_num = arr_i_letter.indexOf(i_class_name) + 1;
-        console.log(block_num);
-        document.querySelector(`.questype-${block_num}`).style.display='block';
         
+        document.querySelector(`.questype-${block_num}`).style.cssText = "display: block !important;";
+        console.log(block_num);
         })
         
     });
