@@ -86,6 +86,7 @@ body{
         .question-1{
             display:flex;
             justify-content: space-between;
+            align-items: center;
             .text-box{
                  .form-title-input{
                 border:none;
@@ -118,7 +119,8 @@ body{
             }
            
             .fa-images{
-                font-size: 26px;
+                font-size: 20px;
+                color:$grey
             }
             .check{
                 position: relative;
@@ -251,6 +253,99 @@ body{
                         color:$font-grey;
                     
                 }
+                a{
+                    color:$md-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+        .questype-4{
+            width:100%;
+            padding: 30px 0;
+            border-bottom: 1px solid $grey;
+            display:none;
+            .choose{
+                width:100%;
+                display: flex;
+                align-items: center;
+                #checkbox, #checkbox2{
+                   width:24px;
+                   height:24px;
+                //    border-radius: 4px; 
+                //    border:5px solid $grey;
+                   margin-right: 5px;
+                   pointer-events: none;
+                }
+                .choose_line{
+                    width:80%;
+                    border:none;
+                    height:40px;
+                    font-size:16px;
+                    font-weight: 500;
+                    &:hover{
+                        border-bottom:1px solid $grey ;
+                    }
+                    &:focus{
+                        border:0px solid white;
+                        border-bottom:3px solid  rgb(103,58,183);
+                        outline: none;
+                    }
+                    
+                }
+                .choose_line2{
+                        width:70px; 
+                        color:$font-grey;
+                    
+                }
+                a{
+                    color:$md-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+        .questype-5{
+            display:none;
+            width:100%;
+            padding: 30px 0;
+            border-bottom: 1px solid $grey;
+            display:none;
+            .choose{
+                width:100%;
+                display: flex;
+                align-items: center;
+                span{
+                    padding-top: 12px;
+                }
+                .choose_line{
+                    width:80%;
+                    border:none;
+                    height:40px;
+                    font-size:16px;
+                    font-weight: 500;
+                    &:hover{
+                        border-bottom:1px solid $grey ;
+                    }
+                    &:focus{
+                        border:0px solid white;
+                        border-bottom:3px solid  rgb(103,58,183);
+                        outline: none;
+                    }    
+                }
+                .choose_line2{
+                        width:70px; 
+                        color:$font-grey;
+                }
+            }
+        }
+        .questype-6{
+            width:100%;
+            display: none;
+            padding: 10px 0 10px;
+            div{
+                padding:20px;
+                width:100%;
+                display: flex;
+                justify-content: end;
                 a{
                     color:$md-blue;
                     text-decoration: none;
