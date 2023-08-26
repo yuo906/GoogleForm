@@ -198,18 +198,22 @@
         i_class_name = i_class.classList.value;
         console.log(i_class_name);
         check_box_i.classList=[`${ i_class_name}`];
-        // 改成選到的類別的題目方塊
-        let block_num_before = arr_i_letter.indexOf(i_class_name);
-        let block_num = arr_i_letter.indexOf(i_class_name) + 1;
-        console.log(block_num);
-        document.querySelector(`.questype-${block_num}`).style.display='block';
-        // check_box_i.classList.add('ans');
-        check_box.style.display='flex';
+        // 收合選單
+        //check_box_i.classList.add('ans');
+         check_box.style.display='flex';
         answer_style.style.display='none';
         for(i = 0; i < 5; i++){
         answer_ul[i].style.display='none';
         };
         console.log(123);
+        // 改成選到的類別的題目方塊
+        document.querySelector('[class^="questype-"]').style.display='none';
+        // document.querySelectorAll('[class^="questype-"]').style.display='none';
+        let block_num_before = arr_i_letter.indexOf(i_class_name);
+        let block_num = arr_i_letter.indexOf(i_class_name) + 1;
+        console.log(block_num);
+        document.querySelector(`.questype-${block_num}`).style.display='block';
+        
         })
         
     });
