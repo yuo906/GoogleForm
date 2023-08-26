@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0;
+  background-color: #F0EBF8;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.response-head {
+  margin: auto;
+  max-width: 768px;
+  background-color: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.response-head .head-top {
+  padding: 16px 8px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.response-head .head-top .func {
+  display: flex;
+  align-items: center;
+}
+.response-head .head-top .func .excel-link {
+  position: relative;
+}
+.response-head .head-top .func .excel-link .to-excel {
+  font-size: 20px;
+  padding: 10px 24px;
+}
+.response-head .head-top .func .excel-link .to-excel .excel {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  line-height: 25px;
+}
+.response-head .head-top .func .excel-link .to-excel .directions {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 12px;
+  background-color: rgb(129, 129, 129);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 8px;
+  cursor: none;
+}
+.response-head .head-top .func .excel-link .to-excel:hover {
+  background-color: rgba(234, 247, 255, 0.6);
+  border-radius: 10px;
+}
+.response-head .head-top .func .excel-link .to-excel:hover .directions {
+  display: block;
+}
+.response-head .head-top .func .dots {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.response-head .head-top .func .dots:hover {
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
+}
+.response-head .head-top .func .dot-box-all {
+  position: absolute;
+  top: 40px;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: auto;
+  height: 200px;
+  overflow: auto;
+  box-shadow: 0 2px 1px grey;
+  display: none;
+}
+.response-head .head-top .func .dot-box-all::-webkit-scrollbar {
+  width: 1em;
+}
+.response-head .head-top .func .dot-box-all::-webkit-scrollbar-thumb {
+  background-color: rgb(180, 180, 180);
+  border: 1px solid white;
+}
+.response-head .head-top .func .dot-box-all li {
+  list-style: none;
+  line-height: 40px;
+}
+.response-head .head-top .func .dot-box-all li:hover {
+  background-color: #e6e6e6;
+}
+.response-head .head-top .func .dot-box-all li .icon {
+  margin-left: 15px;
+  width: 20px;
+  font-size: 20px;
+}
+.response-head .head-top .func .dot-box-all li .text {
+  padding-right: 10px;
+  margin-left: 20px;
+}
+.response-head .head-top .func #dot-box-switch:checked ~ .dot-box-all {
+  display: block;
+}
+.response-head .head-middle {
+  padding: 24px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.response-head .head-middle span {
+  color: #686868;
+  margin-right: 20px;
+}
+.response-head .head-middle .button-bar {
+  position: relative;
+  width: 45px;
+  height: 18px;
+  background-color: rgb(225, 216, 241);
+  border-radius: 25px;
+  margin-top: 3px;
+}
+.response-head .head-middle .button-circle {
+  position: absolute;
+  margin-top: 2px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(103, 58, 183);
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.response-head .head-middle .button-circle:hover {
+  box-shadow: 0px 0px 0px 10px rgba(234, 247, 255, 0.4);
+}
+
+.response-body {
+  margin: auto;
+  max-width: 768px;
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+.response-body span {
+  color: #686868;
+}
+
+@media (max-width: 480px) {
+  .to-excel {
+    display: none;
+  }
+}/*# sourceMappingURL=response.css.map */

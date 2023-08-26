@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+  <style>
+    li {
+      list-style: none;
+      line-height: 40px;
+    }
+
+    .icon {
+      width: 20px;
+      font-size: 20px;
+    }
+
+    .text {
+      margin-left: 20px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .dot-box-all {
+      /* background-color: aqua; */
+      width: 270px;
+      overflow: hidden;
+      display: none;
+    }
+
+    #dot-box-switch:checked ~ .dot-box-all {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="checkbox" id="dot-box-switch">
+  <label for="dot-box-switch" class="menu"></label>
+  <ul class="dot-box-all">
+    <li><i class="fa-sharp fa-light fa-check icon" style="color: #b0b0b0;"></i><span class="text">有新回應時透過電子郵件通知我</span></li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text">選取回應目標位置</span></li>
+    <li><i class="fa-regular fa-link-simple-slash fa-flip-both icon" style="color: #d6d7d8;"></i><span class="text">取消連結表單</span></li>
+    <li><i class="fa-regular fa-arrow-down-to-line icon" style="color: #d6d7d8;"></i><span class="text">下載回應(.csv)</span></li>
+    <li><i class="fa-solid fa-print icon" style="color: #d6d7d8;"></i><span class="text">列印所有回應</span></li>
+    <li><i class="fa-light fa-trash-can icon" style="color: #d6d7d8;"></i><span class="text">刪除所有回應</span></li>
+  </ul>
+
+</body>
+
+</html>

@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/response.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
 </head>
+
 <body>
-  
+  <div class="all">
+    <div class="response-head">
+      <div class="head-top">
+        <h1>0則回應</h1>
+        <div class="func">
+          <div class="excel-link">
+
+            <a class="to-excel" href="">
+              <img class="excel" src="./img/excel.png" alt="">
+              <span>連結至試算表</span>
+              <span class="directions">將回覆傳送至試算表</span>
+            </a>
+          </div>
+
+          <div>
+            <input type="checkbox" id="dot-box-switch" hidden>
+            <label for="dot-box-switch" class="menu">
+              <i class="fa-regular fa-ellipsis-vertical dots" style="color: #5f6368; font-size: 24px;"></i>
+            </label>
+            <div class="dot-box-all">
+              <li>
+                <i class="fa-sharp fa-light fa-check icon" style="color: #b0b0b0;"></i>
+                <span class="text">有新回應時透過電子郵件通知我</span>
+              </li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text">選取回應目標位置</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-link-simple-slash fa-flip-both icon" style="color: #d6d7d8;"></i>
+                <span class="text">取消連結表單</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-arrow-down-to-line icon" style="color: #d6d7d8;"></i>
+                <span class="text">下載回應(.csv)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-print icon" style="color: #d6d7d8;"></i>
+                <span class="text">列印所有回應</span>
+              </li>
+              <li>
+                <i class="fa-light fa-trash-can icon" style="color: #d6d7d8;"></i>
+                <span class="text">刪除所有回應</span>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head-middle">
+        <span>接受回應</span>
+        <div class="button-bar"></div>
+        <div class="button-circle"></div>
+      </div>
+    </div>
+    <div class="response-body">
+      <span>待回應</span>
+    </div>
+  </div>
 </body>
+
 </html>
