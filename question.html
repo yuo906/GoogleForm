@@ -104,8 +104,8 @@
                 
                     </div> 
                 </div>
-            <!-- 第二行 線性刻度 -->
-            <div class="question-2">
+            <!-- 第二行 第七種 線性刻度 -->
+            <div class="questype-7">
                 <!-- 範圍設定 -->
                 <div class="set-number">
                     <ul class="number0-1">
@@ -161,13 +161,22 @@
     </div>  
     <script>
 // --------------------題目形式選擇----------------------------------------------
-    let check_box = document.querySelector('.check-box');
+   {let check_box = document.querySelector('.check-box');
     let check_box_i = document.querySelector('.check-box i');
     let check_box_span = document.querySelector('.check-box span');
     
     let answer_style= document.querySelector('.answer-style');
     let answer_ul = document.querySelectorAll('.answer-style ul');
     let answer = document.querySelectorAll('.answer-style ul li');
+    let answer_i = document.querySelectorAll('.answer-style ul li i');
+    let arr_i = Array.from(answer_i);
+    let arr_i_letter = Array.from(answer_i).map(element=>element.classList.value);
+ 
+// classList:DOMTokenList(3) ['fa-solid', 'fa-pause', 'fa-rotate-90', value: 'fa-solid fa-pause fa-rotate-90']
+    console.log(arr_i);
+    console.log(arr_i_letter);
+    console.log(answer);
+    
     //    -------點選預設項目時------------
     check_box.addEventListener('click',()=>{
         answer_style.style.display='block';
@@ -181,12 +190,19 @@
         ans = item.classList.value;
         console.log(ans);
         // console.log(item);
+        // 改成選到的類別的文字
         check_box_i.classList=[];
         check_box_span.textContent=`${item.textContent}`;
         i_class= item.querySelector('i');
+        // 改成選到的類別的icon
         i_class_name = i_class.classList.value;
+        console.log(i_class_name);
         check_box_i.classList=[`${ i_class_name}`];
-
+        // 改成選到的類別的題目方塊
+        let block_num_before = arr_i_letter.indexOf(i_class_name);
+        let block_num = arr_i_letter.indexOf(i_class_name) + 1;
+        console.log(block_num);
+        document.querySelector(`.questype-${block_num}`).style.display='block';
         // check_box_i.classList.add('ans');
         check_box.style.display='flex';
         answer_style.style.display='none';
@@ -194,13 +210,10 @@
         answer_ul[i].style.display='none';
         };
         console.log(123);
-     })
+        })
         
     });
-
-
-
-
+   }
 
 
 // --------------------線性刻度--------------------------------------

@@ -121,7 +121,7 @@ body{
                     color:$font-grey;
                     border:1px solid $grey;
                     font-weight: 600;
-                    .fa-circle-dot{
+                    i{
                         font-size: 24px;
                     }
                     span{
@@ -175,10 +175,11 @@ body{
             }
         }
            
-        .question-2{
+        .questype-7{
            width:100%;
            border-bottom: 1px solid $grey;
            padding-bottom: 30px;
+           display:none;
             .set-number{
                 display: flex;
                 align-items: center;
