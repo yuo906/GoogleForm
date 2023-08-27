@@ -32,9 +32,7 @@ body {
             width: 100%;
             height: 100%;
             padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+
 
             .setting-box {
                 border-bottom: 1px solid #000;
@@ -46,20 +44,70 @@ body {
                     margin: 0px;
                 }
 
-                #text {
-                    .font-box{
+                .font-box {
+                    .x-1 {
+                        width: 100%;
+                        height: 100%;
                         display: flex;
-                        
+                        justify-content: space-between;
+                        align-items: center;
+
                     }
                 }
 
+                .textbox {
+                    width: 95%;
+                    height: 95%;
+                    padding: 5%;
 
+                }
             }
 
             #reply {
 
-                ul {
-                    display: none;
+                .font-box {
+
+
+                    .replaybox {
+                        width: 100%;
+                        height: 100%;
+                        padding: 2%;
+
+                        h3 {
+                            margin: 0px;
+                        }
+
+
+                        .rpbox {
+                            margin: 18px;
+
+
+                            .x-1 {
+                                width: 100%;
+                                height: 100%;
+
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .x-2 {
+
+                                    select {
+                                        padding: 10px;
+
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                a {
+                    text-decoration: none;
                 }
             }
 
