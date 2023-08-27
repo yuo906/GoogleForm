@@ -1,5 +1,6 @@
 $grey:rgb(178, 176, 176);
 $font-grey:rgb(108, 105, 105);
+$grey-bac:rgb(104,108,113);
 $blue:rgb(237,244,253);
 $md-blue:rgb(39,123,233);
 
@@ -13,10 +14,88 @@ body{
     margin: 0;
     background-color:rgb(240,235,248);
     padding-top:100px;
+    
 }
+
+
+
 .container{
     width:770px;
     margin: auto;
+    position: relative;
+    .side{
+        width:49px;
+        height:253px;
+        position: absolute;
+        top:0px;
+        right:-70px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow:3px 3px 3px $grey; 
+        box-shadow:0px 0px 3px $grey;
+        div{
+            width:49px;
+            font-size: 22px;
+            color:$font-grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 10px; 
+            position: relative;
+            &:hover{
+                background-color: $blue;
+            }
+            &:hover div{
+                display: block;
+            }
+            &:nth-of-type(1){
+                    border-radius: 10px 10px 0 0;
+            } 
+            &:nth-of-type(6){
+                border-radius: 0 0 10px 10px;
+            } 
+
+            i{
+                display: block;  
+                width:22px;
+            }
+
+           
+
+            div{
+                display: none;
+                width:auto;
+                height:20px;
+                white-space: nowrap;
+                padding: 3px;
+                background-color:$grey-bac ;
+                color:white;
+                font-size: 12px;
+                position: absolute;
+                top:10px;
+                right:-70px;
+                border-radius:5px!important;
+                &:hover{
+                    background-color: $grey-bac;
+                }
+            }
+        }
+        .side-2 i {
+            transform: translateX(-3px);
+        }
+        .side-4 i {
+            transform: translateX(-2px);
+        }
+        .side-5 i {
+            transform: translateX(-1px);
+        }
+
+        .side-3 div{
+            padding:3px ;
+            position: absolute;
+            right:-106.4px;
+        }
+    }
    
     .form-title{
         width:100%;

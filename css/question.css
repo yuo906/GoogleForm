@@ -12,6 +12,75 @@ body {
 .container {
   width: 770px;
   margin: auto;
+  position: relative;
+}
+.container .side {
+  width: 49px;
+  height: 253px;
+  position: absolute;
+  top: 0px;
+  right: -70px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(178, 176, 176);
+  box-shadow: 0px 0px 3px rgb(178, 176, 176);
+}
+.container .side div {
+  width: 49px;
+  font-size: 22px;
+  color: rgb(108, 105, 105);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px;
+  position: relative;
+}
+.container .side div:hover {
+  background-color: rgb(237, 244, 253);
+}
+.container .side div:hover div {
+  display: block;
+}
+.container .side div:nth-of-type(1) {
+  border-radius: 10px 10px 0 0;
+}
+.container .side div:nth-of-type(6) {
+  border-radius: 0 0 10px 10px;
+}
+.container .side div i {
+  display: block;
+  width: 22px;
+}
+.container .side div div {
+  display: none;
+  width: auto;
+  height: 20px;
+  white-space: nowrap;
+  padding: 3px;
+  background-color: rgb(104, 108, 113);
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: -70px;
+  border-radius: 5px !important;
+}
+.container .side div div:hover {
+  background-color: rgb(104, 108, 113);
+}
+.container .side .side-2 i {
+  transform: translateX(-3px);
+}
+.container .side .side-4 i {
+  transform: translateX(-2px);
+}
+.container .side .side-5 i {
+  transform: translateX(-1px);
+}
+.container .side .side-3 div {
+  padding: 3px;
+  position: absolute;
+  right: -106.4px;
 }
 .container .form-title {
   width: 100%;
