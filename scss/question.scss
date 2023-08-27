@@ -13,7 +13,7 @@ $md-blue:rgb(39,123,233);
 body{  
     margin: 0;
     background-color:rgb(240,235,248);
-    padding-top:100px;
+    padding:100px 0 100px;
     
 }
 
@@ -29,6 +29,8 @@ body{
     .side{
         width:49px;
         height:253px;
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top:0px;
         right:-70px;
@@ -37,7 +39,13 @@ body{
         box-shadow:3px 3px 3px $grey; 
         box-shadow:0px 0px 3px $grey;
         @media(max-width:950px){
-            display:none;
+            position: fixed;   
+            width:98%;
+            height:60px;
+            top:calc(100% - 60px);
+            left:0;
+            flex-direction: row;
+            justify-content: space-around;
         }
         div{
             width:49px;
@@ -71,16 +79,17 @@ body{
             div{
                 display: none;
                 width:auto;
-                height:20px;
+                height:auto;
                 white-space: nowrap;
-                padding: 3px;
+                padding: 6px;
                 background-color:$grey-bac ;
                 color:white;
                 font-size: 12px;
                 position: absolute;
                 top:10px;
                 right:-70px;
-                border-radius:5px!important;
+                border-radius:3px!important;
+                z-index: 3;
                 &:hover{
                     background-color: $grey-bac;
                 }
@@ -115,7 +124,7 @@ body{
          .form-title-input{
                 border:none;
                 border-bottom:1px solid $grey ;
-                width:95%;
+                width:91%;
                 height:45px;
                 font-size:32px;
                 font-weight: 600;
@@ -142,7 +151,7 @@ body{
         }
         .form-explain-input-2{
             border:none;
-            width:95%;
+            width:91%;
             height:21px;
             font-size:18px;
             font-weight: 600;
