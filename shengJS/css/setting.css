@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: gray;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body .box {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  margin-bottom: 5%;
+  padding: 10px;
+}
+.body .box .set {
+  padding-bottom: 20px;
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+.body .box .box-set {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.body .box .box-set .setting-box {
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.body .box .box-set .setting-box h4 {
+  margin: 0px;
+}
+.body .box .box-set .setting-box .font-box .x-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body .box .box-set .setting-box .textbox {
+  width: 95%;
+  height: 95%;
+  padding: 5%;
+}
+.body .box .box-set #reply .font-box .replaybox {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+.body .box .box-set #reply .font-box .replaybox h3 {
+  margin: 0px;
+}
+.body .box .box-set #reply .font-box .replaybox .rpbox {
+  margin: 18px;
+}
+.body .box .box-set #reply .font-box .replaybox .rpbox .x-1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body .box .box-set #reply .font-box .replaybox .rpbox .x-1 .x-2 select {
+  padding: 10px;
+  font-weight: 600;
+}
+.body .box .box-set #reply a {
+  text-decoration: none;
+}/*# sourceMappingURL=setting.css.map */

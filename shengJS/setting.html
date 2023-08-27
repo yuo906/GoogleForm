@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/setting.css">
+</head>
+
+<body>
+    <div class="body"> <!--設定的區域-->
+        <div id="setting" class="box"> <!--設定欄位-->
+            <h1 class="set"><small>設定</small></h1> <!--第一欄 設定區域-->
+            <div class="box-set"> <!--區域最頂層-->
+                <div id="text" class="setting-box"> <!--測驗設定-->
+                    <div class="font-box ">
+                        <div class="x-1">
+                            <div class="x-2">
+                                <h4>設為測驗</h4>
+                                <small>你可以指派各題目的分數值、設定答案，以及自動提供意見回饋</small>
+                            </div>
+
+                            <div class="x-2">
+                                <button class="">
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textbox">
+                        <div class="textseting">
+                            <div class="text-set">
+                                <small>發布成績</small>
+                            </div>
+                            <div class="text-set">
+                                <div class="textA">
+                                    <div class="textbtn"><button></button>提交後公布成績</div>
+                                </div>
+                                <br>
+                                <div class="textA">
+                                    <div class="textbtn"><button></button>稍後 (手動批閱後) 公佈
+                                        <br>
+                                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系統會開啟 [回覆] → [收集電子郵件地址]</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="x-1">
+                            <div class="x-2">
+                                <h3>
+                                    允許編輯回覆
+                                </h3>
+                                <small>你可以更改已提交的回覆</small>
+
+
+                            </div>
+                            <div class="x-2">
+                                <button class="">
+
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="reply" class="setting-box"> <!--回覆區塊nav拉霸-->
+                    <div class="font-box"> <!--是否啟用收集電子郵件-->
+                        <h4>回覆</h4>
+                        <small>管理收集與保護回覆的方式</small>
+                        <div class="replaybox">
+                            <div class="rpbox">
+                                <div class="x-1">
+                                    <div class="x-2">
+                                        <h3>
+                                            收集電子郵件 <!-- 選取不收集-->
+                                        </h3>
+
+                                        <small>作答者必須登入 Google</small> <!--選取已驗證 並且關閉傳送表單給作答者-->
+                                        <br>
+                                        <small>作答者會手動輸入自己的電子郵件地址</small> <!--選取由作答者手動登入  下方選項關閉-->
+                                        <br>
+                                        <small>如要傳送回覆副本，則必須開啟這項設定
+                                            <br>作答者必須登入 Google</small> <!--選取已驗證 並要求即傳送 一律傳送給作答者 -->
+                                        <br>
+                                        <small>如要傳送回覆副本，則必須開啟這項設定
+
+                                            <br>作答者會手動輸入自己的電子郵件地址</small> <!--選取由作答者手動輸入 以及 選項 要求即傳送 一律-->
+
+
+                                    </div>
+                                    <div class="x-2">
+                                        <select name="menu" id="selectmenu"> <!--開啟MENU選單-->
+                                            <option value="menu"> <!--選擇不收集 不會跳出  作答者必須登入 Google-->
+                                                不收集
+                                            </option>
+                                            <option value="menu"> <!--選擇已驗證 則會顯示 作答者必須登入 Google-->
+                                                已驗證
+                                            </option>
+                                            <option value="menu">
+                                                由作者親自輸入
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="rpbox">
+                                <div class="x-1">
+                                    <div class="x-2">
+                                        <h3>
+                                            傳送表單回覆副本給作答者
+                                        </h3>
+                                        <small>必須開啟「收集電子郵件地址」設定</small>
+
+
+                                    </div>
+                                    <div class="x-2">
+                                        <select name="menu" id="selectmenu"> <!--開啟MENU選單-->
+                                            <option value="menu"> <!--選擇不收集 不會跳出  作答者必須登入 Google-->
+                                                關閉
+                                            </option>
+                                            <option value="menu"> <!--選擇已驗證 則會顯示 作答者必須登入 Google-->
+                                                要求即傳送
+                                            </option>
+                                            <option value="menu">
+                                                一律
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="rpbox">
+                                <div class="x-1">
+                                    <div class="x-2">
+                                        <h3>
+                                            允許編輯回覆
+                                        </h3>
+                                        <small>你可以更改已提交的回覆</small>
+
+
+                                    </div>
+                                    <div class="x-2">
+                                        <button class="">
+
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="rpbox">
+                                <small>需要登入</small>
+                            </div>
+                            <div class="rpbox">
+                                <div class="x-1">
+                                    <div class="x-2">
+                                        <h3>
+                                            僅限回覆 1 次
+                                        </h3>
+                                        <small>作答者必須登入 Google。</small> <!--開啟選項並顯示這則文字-->
+                                    </div>
+                                    <div class="x-2">
+                                        <button class="">
+
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="rpbox">
+                                <small>檔案上傳</small>
+                            </div>
+                            <div class="rpbox">
+                                <div class="x-1">
+                                    <div class="x-2">
+                                        <h3>
+                                            所有上傳檔案的加總大小上限
+                                        </h3>
+                                        <small>達到上限後系統就不再接受任何回覆。<a
+                                                href="https://support.google.com/docs/answer/7322334?visit_id=638286678980782212-2935304130&p=forms_file_upload&rd=1#file_upload">瞭解詳情</a></small>
+
+
+                                    </div>
+                                    <div class="x-2">
+                                        <select name="menu" id="selectmenu"> <!--開啟MENU選單-->
+                                            <option value="menu"> <!--選擇不收集 不會跳出  作答者必須登入 Google-->
+                                                1GB
+                                            </option>
+                                            <option value="menu"> <!--選擇已驗證 則會顯示 作答者必須登入 Google-->
+                                                10GB
+                                            </option>
+                                            <option value="menu">
+                                                100GB
+                                            </option>
+                                            <option value="menu">
+                                                1TB
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="ppt" class="setting-box">
+                    <h4>簡報 </h4>
+                    <small>管理表單和回覆的顯示方式</small>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="preview" class="box"> <!--預設值欄位-->
+            <h1>預設值</h1>
+            <div id="preview-set" class="preview-box"></div>
+            <div id="question-set" class="preview-box"></div>
+        </div>
+    </div>
+</body>
+
+</html>
