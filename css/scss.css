@@ -33,6 +33,7 @@ nav .container {
   width: 100%;
   height: 107px;
   flex-direction: column;
+  justify-content: space-between;
   background-color: white;
 }
 nav .container .top {
@@ -65,24 +66,18 @@ nav .container .top .topL .title {
   color: #202124;
 }
 nav .container .top .topL .star {
-  background-image: url(/img/star_FILL0_wght400_GRAD0_opsz48.svg);
+  background-image: url(/img/star_FILL0.svg);
   background-size: cover;
   background-position: center;
   width: 25px;
   height: 25px;
 }
 nav .container .top .topL .darkStar {
-  background-image: url(/img/star_FILL1_wght400_GRAD0_opsz48.svg);
+  background-image: url(/img/star_FILL1.svg);
   background-size: cover;
   background-position: center;
   width: 25px;
   height: 25px;
-}
-nav .container .top .topL #ham-menu-switch {
-  cursor: pointer;
-}
-nav .container .top .topL #ham-menu-switch:hover {
-  background-color: rgb(237, 237, 237);
 }
 nav .container .top .topR {
   display: flex;
@@ -112,11 +107,10 @@ nav .container .top .topR .sent {
   justify-content: center;
 }
 nav .container .top .topR #menu {
-  width: 200px;
-  height: 270px;
+  width: 256px;
+  height: 444px;
   background-color: white;
   border: solid 1px gainsboro;
-  padding: 5px 5px 5px 5px;
   border-radius: 2px;
   margin-top: 5px;
   display: none;
@@ -126,23 +120,153 @@ nav .container .top .topR #menu {
   top: 50px;
   right: 50px;
 }
+nav .container .top .topR .option-group {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
 nav .container .top .topR .option {
-  width: 150px;
-  padding: 15px 0;
-  margin-top: 5px;
+  width: 230px;
+  margin: 15px 0;
+  padding-left: 10px;
   line-height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(80, 80, 80);
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+nav .container .top .topR .option span {
+  margin-left: 10px;
 }
 nav .container .top .topR #ham-menu-switch:checked ~ #menu {
   display: block;
+}
+nav .container .top .topR .downMenu {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+nav .container .top .topR .downMenu:hover {
+  background-color: rgb(237, 237, 237);
+  border-radius: 50%;
 }
 nav .container .top .topR .account {
   width: 30px;
   height: 30px;
   background-color: #673AB7;
   border-radius: 50%;
+}
+nav .container .top .topR #account-menu {
+  width: 400px;
+  height: 400px;
+  background-color: aliceblue;
+  border: solid 1px gainsboro;
+  padding: 5px 5px 5px 5px;
+  border-radius: 30px;
+  margin-top: 5px;
+  display: none;
+  box-shadow: 0 0 1px 1px gray;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+nav .container .top .topR #account-menu .flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .top .topR #account-menu .flex .photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #673AB7;
+}
+nav .container .top .topR #account-menu .flex .hello {
+  width: 80%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .top .topR #account-menu .flex .manage {
+  width: 50%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  color: #0756ff;
+  align-items: center;
+  font-size: 14px;
+}
+nav .container .top .topR #account-menu .flex .advice {
+  width: 80%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+}
+nav .container .top .topR #account-menu .flex .acc {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .container .top .topR #account-menu .flex .acc .add {
+  width: 49.5%;
+  height: 50px;
+  border: 1px solid;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+}
+nav .container .top .topR #account-menu .flex .acc .log-out {
+  width: 49.5%;
+  height: 50px;
+  border: 1px solid;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+}
+nav .container .top .topR #account-menu .flex .footer {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .top .topR #account-menu .flex .footer .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+nav .container .top .topR #ham-menu-switch-2:checked ~ #account-menu {
+  display: block;
 }
 nav .container .down {
   height: 40%;

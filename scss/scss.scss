@@ -22,20 +22,22 @@ button:hover {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48,
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48,
 }
 
 nav {
     position: relative;
+
     .container {
         display: flex;
         width: 100%;
         height: 107px;
         flex-direction: column;
+        justify-content: space-between;
         background-color: white;
 
         .top {
@@ -71,7 +73,7 @@ nav {
                 }
 
                 .star {
-                    background-image: url(/img/star_FILL0_wght400_GRAD0_opsz48.svg);
+                    background-image: url(/img/star_FILL0.svg);
                     background-size: cover;
                     background-position: center;
                     width: 25px;
@@ -79,19 +81,11 @@ nav {
                 }
 
                 .darkStar {
-                    background-image: url(/img/star_FILL1_wght400_GRAD0_opsz48.svg);
+                    background-image: url(/img/star_FILL1.svg);
                     background-size: cover;
                     background-position: center;
                     width: 25px;
                     height: 25px;
-                }
-
-                #ham-menu-switch {
-                    cursor: pointer;
-                }
-
-                #ham-menu-switch:hover {
-                    background-color: rgb(237, 237, 237);
                 }
             }
 
@@ -126,11 +120,10 @@ nav {
                 }
 
                 #menu {
-                    width: 200px;
-                    height: 270px;
+                    width: 256px;
+                    height: 444px;
                     background-color: white;
                     border: solid 1px gainsboro;
-                    padding: 5px 5px 5px 5px;
                     border-radius: 2px;
                     margin-top: 5px;
                     display: none;
@@ -140,19 +133,48 @@ nav {
                     top: 50px;
                     right: 50px;
                 }
-        
+
+                .option-group {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    width: 100%;
+                    border-bottom: 1px solid black;
+                }
+
                 .option {
-                    width: 150px;
-                    padding: 15px 0;
-                    margin-top: 5px;
+                    width: 230px;
+                    margin: 15px 0;
+                    padding-left: 10px;
                     line-height: 30px;
                     font-family: Arial, Helvetica, sans-serif;
                     color: rgb(80, 80, 80);
                     font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin-left: 10px;
+                    }
                 }
-        
+
                 #ham-menu-switch:checked~#menu {
                     display: block;
+                }
+
+                .downMenu {
+                    width: 45px;
+                    height: 45px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+
+                .downMenu:hover {
+                    background-color: rgb(237, 237, 237);
+                    border-radius: 50%;
                 }
 
                 .account {
@@ -161,7 +183,126 @@ nav {
                     background-color: #673AB7;
                     border-radius: 50%;
                 }
+
+                #account-menu {
+                    width: 400px;
+                    height: 400px;
+                    background-color: aliceblue;
+                    border: solid 1px gainsboro;
+                    padding: 5px 5px 5px 5px;
+                    border-radius: 30px;
+                    margin-top: 5px;
+                    display: none;
+                    box-shadow: 0 0 1px 1px gray;
+                    position: absolute;
+                    top: 80px;
+                    right: 30px;
+
+                    .flex {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .photo {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            background-color: #673AB7;
+                        }
+
+                        .hello {
+                            width: 80%;
+                            height: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .manage {
+                            width: 50%;
+                            height: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid black;
+                            border-radius: 30px;
+                            color: #0756ff;
+                            align-items: center;
+                            font-size: 14px;
+                        }
+
+                        .advice {
+                            width: 80%;
+                            height: 50px;
+                            border: 1px solid;
+                            border-radius: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgb(233, 233, 233);
+                        }
+
+                        .acc {
+                            width: 80%;
+                            height: 50px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .add {
+                                width: 49.5%;
+                                height: 50px;
+                                border: 1px solid;
+                                border-bottom-left-radius: 30px;
+                                border-top-left-radius: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgb(233, 233, 233);
+                            }
+
+                            .log-out {
+                                width: 49.5%;
+                                height: 50px;
+                                border: 1px solid;
+                                border-bottom-right-radius: 30px;
+                                border-top-right-radius: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgb(233, 233, 233);
+                            }
+                        }
+
+                        .footer {
+                            width: 50%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+
+                            .dot {
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                background-color: black;
+                                margin-left: 10px;
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                }
+
+                #ham-menu-switch-2:checked~#account-menu {
+                    display: block;
+                }
             }
+
+
         }
 
         .down {
@@ -187,5 +328,3 @@ nav {
         }
     }
 }
-
-@media (max-width : 950px) {}
