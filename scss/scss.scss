@@ -1,41 +1,191 @@
 * {
     box-sizing: border-box;
     font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: aqua;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
     margin: 0;
+    background-color: rgb(226, 226, 226);
+}
+
+button {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(237, 237, 237);
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
 }
 
 nav {
+    position: relative;
     .container {
         display: flex;
         width: 100%;
         height: 107px;
         flex-direction: column;
+        background-color: white;
+
         .top {
             height: 60%;
             background-color: rgb(255, 255, 255);
             display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+
             .topL {
-                width: 50%;
-                background-color: blueviolet;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                button {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 10px;
+                    padding-bottom: 4px;
+                }
+
+                .logo {
+                    margin: 0 10px;
+                }
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #202124;
+                }
+
+                .star {
+                    background-image: url(/img/star_FILL0_wght400_GRAD0_opsz48.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .darkStar {
+                    background-image: url(/img/star_FILL1_wght400_GRAD0_opsz48.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 25px;
+                    height: 25px;
+                }
+
+                #ham-menu-switch {
+                    cursor: pointer;
+                }
+
+                #ham-menu-switch:hover {
+                    background-color: rgb(237, 237, 237);
+                }
             }
-            .topR{
-                width: 50%;
-                background-color: blanchedalmond;
+
+            .topR {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                button {
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 5px;
+                }
+
+                div {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .sent {
+                    width: 76.5px;
+                    height: 36px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: #673AB7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #menu {
+                    width: 200px;
+                    height: 270px;
+                    background-color: white;
+                    border: solid 1px gainsboro;
+                    padding: 5px 5px 5px 5px;
+                    border-radius: 2px;
+                    margin-top: 5px;
+                    display: none;
+                    overflow-y: scroll;
+                    box-shadow: 0 0 1px 1px gray;
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                }
+        
+                .option {
+                    width: 150px;
+                    padding: 15px 0;
+                    margin-top: 5px;
+                    line-height: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: rgb(80, 80, 80);
+                    font-weight: bold;
+                }
+        
+                #ham-menu-switch:checked~#menu {
+                    display: block;
+                }
+
+                .account {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #673AB7;
+                    border-radius: 50%;
+                }
             }
         }
+
         .down {
             height: 40%;
             background-color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: end;
-            button {
-                border: 0;
-                background-color: white;
-                padding: 10px 20px;
 
+            .btn {
+                padding: 10px 10px;
+                font-size: 16px;
+                border-radius: 0px;
+            }
+
+            .btn:hover {
+                background-color: white;
+            }
+
+            .btn:active {
+                background-color: #a287d156;
             }
         }
     }
 }
+
+@media (max-width : 950px) {}
