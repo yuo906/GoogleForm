@@ -23,6 +23,9 @@ body{
     width:770px;
     margin: auto;
     position: relative;
+    @media(max-width:770px){
+        width:98%;
+    }
     .side{
         width:49px;
         height:253px;
@@ -33,6 +36,9 @@ body{
         border-radius: 10px;
         box-shadow:3px 3px 3px $grey; 
         box-shadow:0px 0px 3px $grey;
+        @media(max-width:950px){
+            display:none;
+        }
         div{
             width:49px;
             font-size: 22px;
@@ -109,7 +115,7 @@ body{
          .form-title-input{
                 border:none;
                 border-bottom:1px solid $grey ;
-                width:720px;
+                width:95%;
                 height:45px;
                 font-size:32px;
                 font-weight: 600;
@@ -136,7 +142,7 @@ body{
         }
         .form-explain-input-2{
             border:none;
-            width:720px;
+            width:95%;
             height:21px;
             font-size:18px;
             font-weight: 600;
@@ -163,17 +169,33 @@ body{
         padding:24px;
         margin:12px 0;
         .question-1{
+            width:100%;
             display:flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            @media(max-width:435px){
+                justify-content:initial;
+            }
+
             .text-box{
+                width:447px;
+                margin-top: 10px;
+                @media(max-width:770px){
+                    width:90%;
+                }
+                @media(max-width:435px){
+                    width:100%;
+                }
+
                  .form-title-input{
                 border:none;
                 border-bottom:1px solid $grey ;
-                width:447px;
+                width:100%;
                 height:56px;
                 font-size:16px;
                 font-weight: 600;
+              
                     &:focus{
                         border:0px solid white;
                         border-bottom:3px solid  rgb(103,58,183);
@@ -187,7 +209,7 @@ body{
                 }
                 .input-list{
                     display:none;
-                    width:447px;
+                    width:100%;
                     height:30px;
                     margin:auto;
                     i{  color:$font-grey;
@@ -200,9 +222,14 @@ body{
             .fa-images{
                 font-size: 20px;
                 color:$grey
+                
             }
             .check{
                 position: relative;
+                margin-top: 10px;
+                @media(max-width:435px){
+                    margin-left: 10px;
+                }
                 .check-box{
                     display:flex;
                     justify-content: space-around;
@@ -641,6 +668,9 @@ body{
                 justify-content: space-around;
                 // background-color: #8f8;
                 border-right: 1px solid $grey;
+                @media(max-width:480px){
+                    display:none;
+                }
             }
             .two-after{
                 width:130px;
