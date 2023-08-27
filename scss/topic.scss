@@ -5,6 +5,11 @@
 .topic {
   box-shadow: 0 0 2px 1px rgb(224, 224, 224);
   width: 350px;
+  position: absolute;
+  right: 0;
+  top: 107px;
+  background-color: white;
+  display: none;
 }
 
 .topic-head {
@@ -46,6 +51,9 @@
 
 .topic-body {
   padding: 10px 20px;
+  overflow-y: scroll;
+  height: calc(100vh - 161px);
+
 
   .select-region {
     margin-bottom: 20px;
