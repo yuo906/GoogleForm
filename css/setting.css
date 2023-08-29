@@ -4,7 +4,6 @@
 
 body {
   margin: 0px;
-  background-color: gray;
 }
 
 .body {
@@ -21,6 +20,9 @@ body {
   margin-bottom: 5%;
   padding: 10px;
 }
+.body .box h3 {
+  margin: 0px;
+}
 .body .box .set {
   padding-bottom: 20px;
   margin: 0;
@@ -36,20 +38,35 @@ body {
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
-.body .box .box-set .setting-box h4 {
-  margin: 0px;
-}
-.body .box .box-set .setting-box .font-box .x-1 {
+.body .box .box-set .setting-box .textsetting {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.body .box .box-set .setting-box .textbox {
-  width: 95%;
-  height: 95%;
-  padding: 5%;
+.body .box .box-set .setting-box .textsetting .textbox-all {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+.body .box .box-set .setting-box .textsetting .textbox-all .textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 18px;
+}
+.body .box .box-set .setting-box .textsetting .textbox-all .textbox .score {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.body .box .box-set .setting-box .textsetting .textbox-all .textbox .answer {
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+}
+.body .box .box-set .setting-box .textsetting .textbox-all .textbox .point {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
 }
 .body .box .box-set #reply .font-box .replaybox {
   width: 100%;

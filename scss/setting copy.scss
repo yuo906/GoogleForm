@@ -4,7 +4,7 @@
 
 body {
     margin: 0px;
-    // background-color: gray;
+    background-color: gray;
 }
 
 .body {
@@ -21,10 +21,6 @@ body {
         background-color: white;
         margin-bottom: 5%;
         padding: 10px;
-
-        h3 {
-            margin: 0px;
-        }
 
         .set {
             padding-bottom: 20px;
@@ -43,46 +39,38 @@ body {
                 margin-bottom: 10px;
                 padding-bottom: 20px;
 
-                .textsetting {
-                    width: 100%;
-                    height: 100%;
-                    // background-color: gray;
 
-                    .textbox-all {
+                h4 {
+                    margin: 0px;
+                }
+
+                .textA {
+                    margin-bottom: 2%;
+                }
+
+                h3 {
+                    margin: 0px;
+
+                }
+
+                .font-box {
+
+                    .x-1 {
                         width: 100%;
                         height: 100%;
-                        padding: 2%;
-
-                        .textbox {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-around;
-                            margin: 18px;
-
-                            .score {
-                                width: 100%;
-                                height: 100%;
-                                background-color: red;
-
-                            }
-
-                            .answer {
-                                width: 100%;
-                                height: 100%;
-                                background-color: purple;
-                            }
-
-                            .point {
-                                width: 100%;
-                                height: 100%;
-                                background-color: blue;
-                            }
-
-                        }
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
 
                     }
                 }
 
+                .textbox {
+                    width: 95%;
+                    height: 95%;
+                    padding: 5%;
+
+                }
             }
 
             #reply {
