@@ -141,9 +141,6 @@ li {
     }
   }
 
-
-
-
   .head-middle {
     padding: 24px;
     display: flex;
@@ -155,29 +152,39 @@ li {
       margin-right: 20px;
     }
 
-    .button-bar {
-      position: relative;
-      width: 45px;
-      height: 18px;
-      background-color: rgb(225, 216, 241);
-      border-radius: 25px;
-      margin-top: 3px;
-    }
+    .btn {
 
-    .button-circle {
-      position: absolute;
-      margin-top: 2px;
-      width: 25px;
-      height: 25px;
-      background-color: rgb(103, 58, 183);
-      border-radius: 50%;
-      box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.4);
-
-      &:hover {
-        box-shadow: 0px 0px 0px 10px rgba(234, 247, 255, 0.4);
+      .button-bar {
+        position: relative;
+        width: 45px;
+        height: 18px;
+        background-color: rgb(225, 216, 241);
+        border-radius: 25px;
+        margin-top: 3px;
       }
-
+  
+      .button-circle {
+        // position: absolute;
+        margin-top: 2px;
+        width: 25px;
+        height: 25px;
+        background-color: rgb(103, 58, 183);
+        border-radius: 50%;
+        box-shadow: 0px 2px 3px rgb(0, 0, 0, 0.4);
+  
+        &:hover {
+          box-shadow: 0px 0px 0px 10px rgba(234, 247, 255, 0.4);
+        }
+  
+      }
+  
+      .active {
+        left: 0;
+        top: 0;
+      }
     }
+
+    
   }
 }
 
